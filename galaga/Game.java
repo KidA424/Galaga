@@ -28,7 +28,7 @@ public class Game extends JPanel {
     
     //public static final Dimension PANEL_SIZE = new Dimension(1435,835);
     public static final Dimension PANEL_SIZE = new Dimension(1435,780);
-    public static final String path = "/Users/kida/Desktop/Assignment_6/src/objects/resources/";
+    public static final String path = "./objects/resources/";
     static final String backgroundPath = path + "background.jpg";
     
     public static int wager;
