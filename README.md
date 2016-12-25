@@ -12,5 +12,5 @@ javac assignment5/Main.java
 Run:
 ```shell
 java assignment5/Main
+File > Play Galaga
 ```
-    File > Play Galaga
