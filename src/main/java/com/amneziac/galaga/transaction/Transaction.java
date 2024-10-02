@@ -1,7 +1,7 @@
 /*
  * 
  */
-package transaction;
+package com.amneziac.galaga.transaction;
 
 import assignment5.Main;
 import java.io.Serializable;
