@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package account;
+package com.amneziac.galaga.account;
 
 import java.util.ArrayList;
 

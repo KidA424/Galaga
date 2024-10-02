@@ -1,5 +1,5 @@
 
-package fleets;
+package com.amneziac.galaga.fleets;
 
 import assignment5.Main;
 import galaga.Game;

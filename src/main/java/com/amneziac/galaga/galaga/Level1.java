@@ -1,4 +1,4 @@
-package galaga;
+package com.amneziac.galaga.galaga;
 
 import curves.Line;
 import curves.Parabola;

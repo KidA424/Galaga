@@ -1,4 +1,4 @@
-package assignment5;
+package com.amneziac.galaga.assignment5;
 
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;

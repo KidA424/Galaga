@@ -1,4 +1,4 @@
-package formations;
+package com.amneziac.galaga.formations;
 
 import curves.Curve;
 import java.awt.Point;

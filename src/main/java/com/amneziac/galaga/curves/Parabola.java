@@ -1,5 +1,5 @@
 
-package curves;
+package com.amneziac.galaga.curves;
 
 import java.awt.Point;
 

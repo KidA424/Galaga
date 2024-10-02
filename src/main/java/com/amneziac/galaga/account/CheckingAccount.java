@@ -1,5 +1,5 @@
 
-package account;
+package com.amneziac.galaga.account;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

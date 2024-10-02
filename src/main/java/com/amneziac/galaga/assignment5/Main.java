@@ -1,5 +1,5 @@
 
-package assignment5;
+package com.amneziac.galaga.assignment5;
 
 import account.AccountList;
 import account.CheckingAccount;

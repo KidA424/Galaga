@@ -1,5 +1,5 @@
 
-package fleets;
+package com.amneziac.galaga.fleets;
 
 import galaga.Level1;
 import java.util.ArrayList;

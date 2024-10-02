@@ -1,4 +1,4 @@
-package fleets;
+package com.amneziac.galaga.fleets;
 
 import objects.Bug2;
 import formations.Formation;

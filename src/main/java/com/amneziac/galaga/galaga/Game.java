@@ -1,4 +1,4 @@
-package galaga;
+package com.amneziac.galaga.galaga;
 
 import fleets.ExplosionFleet;
 import fleets.FighterFleet;
