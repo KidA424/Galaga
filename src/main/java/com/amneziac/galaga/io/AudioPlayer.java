@@ -1,6 +1,5 @@
-package com.amneziac.galaga.audio;
+package com.amneziac.galaga.io;
 import javax.sound.sampled.*;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;

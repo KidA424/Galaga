@@ -1,9 +1,9 @@
 
 package com.amneziac.galaga.objects;
 
-import com.amneziac.galaga.audio.AudioPlayer;
+import com.amneziac.galaga.io.AudioPlayer;
 import com.amneziac.galaga.fleets.FighterFleet;
-import com.amneziac.galaga.galaga.Game;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Point;

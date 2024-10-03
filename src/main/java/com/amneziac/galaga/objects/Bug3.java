@@ -4,6 +4,8 @@ package com.amneziac.galaga.objects;
 //import com.amneziac.galaga.objects.ammo.RedLaser;
 import com.amneziac.galaga.fleets.BugFleet;
 import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.io.ImageLoader;
+
 import java.awt.Dimension;
 import java.awt.Point;
 import java.io.File;
@@ -19,15 +21,9 @@ public class Bug3 extends Bug {
     {        
         super(startingLocation, parent, DEFAULT_SIZE);
         
-        imagePath = Game.path + "Bug3Invert.gif";
+        imagePath = "Bug3Invert.gif";
         speed = 10;
-        
-        try
-        {
-            image = ImageIO.read(new File(imagePath));
-        }
-        catch (IOException e) {}; 
-        
+        image = ImageLoader.load(imagePath);
         image = image.getScaledInstance(width, height, 1);
     }
     

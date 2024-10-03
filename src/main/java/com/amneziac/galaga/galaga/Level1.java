@@ -1,7 +1,7 @@
 package com.amneziac.galaga.galaga;
 
 import com.amneziac.galaga.assignment5.Main;
-import com.amneziac.galaga.audio.AudioPlayer;
+import com.amneziac.galaga.io.AudioPlayer;
 import com.amneziac.galaga.curves.Line;
 import com.amneziac.galaga.curves.Parabola;
 import com.amneziac.galaga.curves.RandomPath;

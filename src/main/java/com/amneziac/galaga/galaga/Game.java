@@ -7,12 +7,11 @@ import com.amneziac.galaga.fleets.ShipFleet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
+import com.amneziac.galaga.io.ImageLoader;
 import com.amneziac.galaga.objects.Explosion;
 import com.amneziac.galaga.objects.Fighter;
 import com.amneziac.galaga.objects.Ship;
@@ -24,9 +23,7 @@ public class Game extends JPanel {
 
     //public static final Dimension PANEL_SIZE = new Dimension(1435,835);
     public static final Dimension PANEL_SIZE = new Dimension(1435,780);
-//    public static final String path = "./objects/resources/";
-    public static final String path = "";
-    static final String backgroundPath = path + "background.jpg";
+    static final String backgroundPath = "background.jpg";
 
     public static int wager;
     public static final int TIME_DELAY = 20;
@@ -48,13 +45,9 @@ public class Game extends JPanel {
     {
         this.wager = wager;
 
-        try
-        {
-            background = ImageIO.read(new File(backgroundPath)).getScaledInstance(PANEL_SIZE.width, PANEL_SIZE.height, 1);
-        }
-        catch (IOException ex) {}
+        initBackground();
 
-        resize(PANEL_SIZE);
+        setSize(PANEL_SIZE);
 
         timer = new Timer(TIME_DELAY, new TimerListener());
 
@@ -67,13 +60,9 @@ public class Game extends JPanel {
 
     public Game ()
     {
-        try
-        {
-            background = ImageIO.read(new File(backgroundPath)).getScaledInstance(PANEL_SIZE.width, PANEL_SIZE.height, 1);
-        }
-        catch (IOException ex) {}
+        initBackground();
 
-        resize(PANEL_SIZE);
+        setSize(PANEL_SIZE);
 
         timer = new Timer(TIME_DELAY, new TimerListener());
 
@@ -81,6 +70,10 @@ public class Game extends JPanel {
         initializeAudio();
 
         level = new Level1(this);
+    }
+
+    private static void initBackground() {
+        background = ImageLoader.load(backgroundPath).getScaledInstance(PANEL_SIZE.width, PANEL_SIZE.height, 1);
     }
 
     public int getScore()

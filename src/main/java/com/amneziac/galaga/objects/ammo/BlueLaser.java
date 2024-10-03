@@ -1,8 +1,10 @@
 
 package com.amneziac.galaga.objects.ammo;
 
-import com.amneziac.galaga.audio.AudioPlayer;
+import com.amneziac.galaga.io.AudioPlayer;
 import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.io.ImageLoader;
+
 import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
@@ -26,14 +28,8 @@ public class BlueLaser extends Ammo {
         width = DEFAULT_SIZE.width;
         height = DEFAULT_SIZE.height;
         
-        imagePath = Game.path + "BlueLaser.gif";
-        
-        try
-        {
-            image = ImageIO.read(new File(imagePath));
-        }
-        catch (IOException e) {};
-        
+        imagePath = "BlueLaser.gif";
+        image = ImageLoader.load(imagePath);
         image = image.getScaledInstance(width, height, 1);
     }
 

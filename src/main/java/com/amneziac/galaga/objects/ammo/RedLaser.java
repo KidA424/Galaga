@@ -2,6 +2,8 @@
 package com.amneziac.galaga.objects.ammo;
 
 import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.io.ImageLoader;
+
 import java.awt.Dimension;
 import java.awt.Point;
 import java.io.File;
@@ -17,14 +19,8 @@ public class RedLaser extends Ammo {
     {
         super(startingLocation, velocityRatio, array);
         
-        imagePath = Game.path + "RedLaser.gif";
-        
-        try
-        {
-            image = ImageIO.read(new File(imagePath));
-        }
-        catch (IOException e) {};
-        
+        imagePath = "RedLaser.gif";
+        image = ImageLoader.load(imagePath);
         image = image.getScaledInstance(width, height, 1);
     }
     

@@ -1,17 +1,17 @@
 
 package com.amneziac.galaga.objects;
 
-import com.amneziac.galaga.audio.AudioPlayer;
+import com.amneziac.galaga.io.AudioPlayer;
 import com.amneziac.galaga.fleets.Fleet;
 import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.io.ImageLoader;
+
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.Timer;
 
 
@@ -48,15 +48,9 @@ public class Explosion extends VisibleObject {
             width = height;
         
         originalWidth = width;
-        
-        imagePath = Game.path + "Explosion.gif";
-        
-        try
-        {
-            originalImage = ImageIO.read(new File(imagePath));
-        }
-        catch (IOException e) {}; 
-        
+
+        imagePath = "Explosion.gif";
+        originalImage = ImageLoader.load(imagePath);
         image = originalImage.getScaledInstance(width, height, 1);
         
     }

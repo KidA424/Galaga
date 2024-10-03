@@ -10,6 +10,8 @@ import java.awt.event.KeyListener;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+
+import com.amneziac.galaga.io.ImageLoader;
 import com.amneziac.galaga.objects.ammo.BlueLaser;
 import com.amneziac.galaga.objects.guns.Gun;
 
@@ -34,13 +36,8 @@ public class Ship extends Fighter implements KeyListener {
         ammoVelocity = -1;
         guns.add(new Gun(leftGun, ammoVelocity, BlueLaser.class, this));
         guns.add(new Gun(rightGun, ammoVelocity, BlueLaser.class, this));
-        
-        imagePath = Game.path + "Ship.gif";
-        try
-        {
-            image = ImageIO.read(new File(imagePath));
-        }
-        catch (IOException e) {}; 
+
+        image = ImageLoader.load("Ship.gif");
         image = image.getScaledInstance(width, height, 1);
         
 //        galaga.Game.timer.addActionListener(this);
