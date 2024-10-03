@@ -1,8 +1,8 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-import fleets.Fleet;
-import galaga.Game;
+import com.amneziac.galaga.fleets.Fleet;
+import com.amneziac.galaga.galaga.Game;
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.awt.Dimension;

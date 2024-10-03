@@ -1,9 +1,9 @@
 
 package com.amneziac.galaga.fleets;
 
-import galaga.Level1;
+import com.amneziac.galaga.galaga.Level1;
 import java.util.ArrayList;
-import objects.VisibleObject;
+import com.amneziac.galaga.objects.VisibleObject;
 
 
 public abstract class Fleet extends ArrayList<VisibleObject> {

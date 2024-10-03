@@ -2,14 +2,14 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package objects;
+package com.amneziac.galaga.objects;
 
-import fleets.BugFleet;
+import com.amneziac.galaga.fleets.BugFleet;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.Random;
-import objects.ammo.RedLaser;
-import objects.guns.Gun;
+import com.amneziac.galaga.objects.ammo.RedLaser;
+import com.amneziac.galaga.objects.guns.Gun;
 
 public abstract class Bug extends Enemy {
     

@@ -3,7 +3,7 @@
  */
 package com.amneziac.galaga.transaction;
 
-import assignment5.Main;
+import com.amneziac.galaga.assignment5.Main;
 import java.io.Serializable;
 
 public abstract class Transaction implements Serializable{

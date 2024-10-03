@@ -1,10 +1,10 @@
 
 package com.amneziac.galaga.assignment5;
 
-import account.AccountList;
-import account.CheckingAccount;
-import galaga.Game;
-import galaga.Level1;
+import com.amneziac.galaga.account.AccountList;
+import com.amneziac.galaga.account.CheckingAccount;
+import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.galaga.Level1;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.regex.Pattern;
 import javax.swing.*;
-import transaction.*;
+import com.amneziac.galaga.transaction.*;
 
 
 public class Main {

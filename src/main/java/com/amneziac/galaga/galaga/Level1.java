@@ -1,19 +1,20 @@
 package com.amneziac.galaga.galaga;
 
-import curves.Line;
-import curves.Parabola;
-import curves.RandomPath;
-import fleets.BugFleet;
-import fleets.ExplosionFleet;
-import fleets.Fleet;
-import fleets.ShipFleet;
-import formations.Formation;
+import com.amneziac.galaga.assignment5.Main;
+import com.amneziac.galaga.curves.Line;
+import com.amneziac.galaga.curves.Parabola;
+import com.amneziac.galaga.curves.RandomPath;
+import com.amneziac.galaga.fleets.BugFleet;
+import com.amneziac.galaga.fleets.ExplosionFleet;
+import com.amneziac.galaga.fleets.Fleet;
+import com.amneziac.galaga.fleets.ShipFleet;
+import com.amneziac.galaga.formations.Formation;
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import objects.Ship;
+import com.amneziac.galaga.objects.Ship;
 
 
 public class Level1 implements Runnable {
@@ -58,7 +59,7 @@ public class Level1 implements Runnable {
         
         fleets.add(new ShipFleet(this));
         ((ShipFleet)fleets.get(1)).addShip(game);
-        assignment5.Main.gameFrame.addKeyListener(Ship.class.cast(fleets.get(1).get(0)));
+        Main.gameFrame.addKeyListener(Ship.class.cast(fleets.get(1).get(0)));
         
         Game.timer.start();
         

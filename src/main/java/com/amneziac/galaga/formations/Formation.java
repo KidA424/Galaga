@@ -1,14 +1,16 @@
 package com.amneziac.galaga.formations;
 
-import curves.Curve;
+import com.amneziac.galaga.curves.Curve;
 import java.awt.Point;
 import java.util.ArrayList;
-import objects.Bug;
+
+import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.objects.Bug;
 
 public class Formation extends ArrayList<Curve> {
-    
-    final static int W = galaga.Game.PANEL_SIZE.width;
-    final static int H = galaga.Game.PANEL_SIZE.height;
+
+    final static int W = Game.PANEL_SIZE.width;
+    final static int H = Game.PANEL_SIZE.height;
     protected Point start;
     protected int currentCurveIndex = 0;
     

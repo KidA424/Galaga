@@ -1,9 +1,9 @@
 package com.amneziac.galaga.galaga;
 
-import fleets.ExplosionFleet;
-import fleets.FighterFleet;
-import fleets.Fleet;
-import fleets.ShipFleet;
+import com.amneziac.galaga.fleets.ExplosionFleet;
+import com.amneziac.galaga.fleets.FighterFleet;
+import com.amneziac.galaga.fleets.Fleet;
+import com.amneziac.galaga.fleets.ShipFleet;
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.awt.*;
@@ -17,20 +17,21 @@ import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
-import objects.Explosion;
-import objects.Fighter;
-import objects.Ship;
-import objects.VisibleObject;
-import objects.ammo.BlueLaser;
+import com.amneziac.galaga.objects.Explosion;
+import com.amneziac.galaga.objects.Fighter;
+import com.amneziac.galaga.objects.Ship;
+import com.amneziac.galaga.objects.VisibleObject;
+import com.amneziac.galaga.objects.ammo.BlueLaser;
 
 
 public class Game extends JPanel {
     
     //public static final Dimension PANEL_SIZE = new Dimension(1435,835);
     public static final Dimension PANEL_SIZE = new Dimension(1435,780);
-    public static final String path = "./objects/resources/";
+//    public static final String path = "./objects/resources/";
+    public static final String path = "";
     static final String backgroundPath = path + "background.jpg";
-    
+
     public static int wager;
     public static final int TIME_DELAY = 20;
     public static final int AMMO_DELAY = 50;

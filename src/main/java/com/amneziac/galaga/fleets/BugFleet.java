@@ -1,22 +1,22 @@
 package com.amneziac.galaga.fleets;
 
-import objects.Bug2;
-import formations.Formation;
-import galaga.Game;
-import galaga.Level1;
+import com.amneziac.galaga.objects.Bug2;
+import com.amneziac.galaga.formations.Formation;
+import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.galaga.Level1;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.Timer;
-import objects.*;
-import objects.ammo.Ammo;
+import com.amneziac.galaga.objects.*;
+import com.amneziac.galaga.objects.ammo.Ammo;
 
 public class BugFleet extends FighterFleet {
     
-    final static int W = galaga.Game.PANEL_SIZE.width;
-    final static int H = galaga.Game.PANEL_SIZE.height;
+    final static int W = Game.PANEL_SIZE.width;
+    final static int H = Game.PANEL_SIZE.height;
     
     protected boolean createBug = true;
     protected int startX;
@@ -120,7 +120,7 @@ public class BugFleet extends FighterFleet {
                     if (Game.collision(bug, ammo))
                     {
                         Bug.class.cast(bug).collisionDetected(ammo);
-                        galaga.Level1.enemiesDestroyed++;
+                        Level1.enemiesDestroyed++;
                     }
                 }
             }

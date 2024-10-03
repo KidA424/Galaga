@@ -1,8 +1,8 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-import fleets.FighterFleet;
-import galaga.Game;
+import com.amneziac.galaga.fleets.FighterFleet;
+import com.amneziac.galaga.galaga.Game;
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.awt.Dimension;
@@ -11,8 +11,8 @@ import java.awt.Point;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import objects.ammo.Ammo;
-import objects.guns.Gun;
+import com.amneziac.galaga.objects.ammo.Ammo;
+import com.amneziac.galaga.objects.guns.Gun;
 
 public abstract class Fighter extends VisibleObject {
     

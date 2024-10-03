@@ -1,15 +1,15 @@
 
 package com.amneziac.galaga.fleets;
 
-import assignment5.Main;
-import galaga.Game;
-import galaga.Level1;
+import com.amneziac.galaga.assignment5.Main;
+import com.amneziac.galaga.galaga.Game;
+import com.amneziac.galaga.galaga.Level1;
 import java.awt.Point;
 import java.util.ArrayList;
 import javax.swing.JApplet;
-import objects.Bug;
-import objects.Ship;
-import objects.ammo.Ammo;
+import com.amneziac.galaga.objects.Bug;
+import com.amneziac.galaga.objects.Ship;
+import com.amneziac.galaga.objects.ammo.Ammo;
 
 public class ShipFleet extends FighterFleet {
     

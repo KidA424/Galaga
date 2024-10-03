@@ -1,11 +1,11 @@
-package objects.guns;
+package com.amneziac.galaga.objects.guns;
 
 import java.awt.Point;
 import java.util.ArrayList;
-import objects.Fighter;
-import objects.ammo.Ammo;
-import objects.ammo.BlueLaser;
-import objects.ammo.RedLaser;
+import com.amneziac.galaga.objects.Fighter;
+import com.amneziac.galaga.objects.ammo.Ammo;
+import com.amneziac.galaga.objects.ammo.BlueLaser;
+import com.amneziac.galaga.objects.ammo.RedLaser;
 
 public class Gun {
     

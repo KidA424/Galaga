@@ -1,7 +1,7 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-import galaga.Game;
+import com.amneziac.galaga.galaga.Game;
 import java.awt.*;
 
 

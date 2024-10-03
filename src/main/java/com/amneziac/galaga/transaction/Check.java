@@ -4,7 +4,7 @@
  */
 package com.amneziac.galaga.transaction;
 
-import assignment5.Main;
+import com.amneziac.galaga.assignment5.Main;
 
 /**
  *

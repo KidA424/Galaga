@@ -1,8 +1,8 @@
 package com.amneziac.galaga.fleets;
 
-import galaga.Level1;
-import objects.Explosion;
-import objects.Fighter;
+import com.amneziac.galaga.galaga.Level1;
+import com.amneziac.galaga.objects.Explosion;
+import com.amneziac.galaga.objects.Fighter;
 
 public abstract class FighterFleet extends Fleet {
     

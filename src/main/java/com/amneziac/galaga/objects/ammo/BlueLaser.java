@@ -1,7 +1,7 @@
 
-package objects.ammo;
+package com.amneziac.galaga.objects.ammo;
 
-import galaga.Game;
+import com.amneziac.galaga.galaga.Game;
 import java.applet.Applet;
 import java.applet.AudioClip;
 import java.awt.Point;

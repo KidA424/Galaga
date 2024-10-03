@@ -1,8 +1,8 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-import fleets.FighterFleet;
-import fleets.Fleet;
+import com.amneziac.galaga.fleets.FighterFleet;
+import com.amneziac.galaga.fleets.Fleet;
 import java.awt.Dimension;
 import java.awt.Point;
 

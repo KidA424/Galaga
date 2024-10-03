@@ -1,8 +1,8 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-import fleets.ShipFleet;
-import galaga.Game;
+import com.amneziac.galaga.fleets.ShipFleet;
+import com.amneziac.galaga.galaga.Game;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
@@ -10,8 +10,8 @@ import java.awt.event.KeyListener;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import objects.ammo.BlueLaser;
-import objects.guns.Gun;
+import com.amneziac.galaga.objects.ammo.BlueLaser;
+import com.amneziac.galaga.objects.guns.Gun;
 
 
 public class Ship extends Fighter implements KeyListener {

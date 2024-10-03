@@ -1,9 +1,9 @@
 
-package objects;
+package com.amneziac.galaga.objects;
 
-//import objects.ammo.RedLaser;
-import fleets.BugFleet;
-import galaga.Game;
+//import com.amneziac.galaga.objects.ammo.RedLaser;
+import com.amneziac.galaga.fleets.BugFleet;
+import com.amneziac.galaga.galaga.Game;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.io.File;

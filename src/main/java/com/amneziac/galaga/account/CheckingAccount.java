@@ -4,7 +4,7 @@ package com.amneziac.galaga.account;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import transaction.*;
+import com.amneziac.galaga.transaction.*;
 
 
 public class CheckingAccount extends Account{
