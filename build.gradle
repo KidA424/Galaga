@@ -1,0 +1,9 @@
+plugins {
+    id "idea"
+    id "java"
+    id "application"
+}
+
+application {
+    mainClass = "com.amneziac.galaga.assignment5.Main"
+}
