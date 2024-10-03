@@ -55,7 +55,7 @@ public class Ship extends Fighter implements KeyListener {
             x -= speed;
         }
 
-        if (rightArrow && x < galaga.Game.PANEL_SIZE.getWidth() - width)
+        if (rightArrow && x < Game.PANEL_SIZE.getWidth() - width)
         {
             x += speed;
         }
@@ -76,7 +76,7 @@ public class Ship extends Fighter implements KeyListener {
                 break;
             case KeyEvent.VK_SPACE:
                 if(!parent.isEmpty())
-                fire();
+                    fire();
                 break;
             case KeyEvent.VK_P:
                 if(Game.timer.isRunning())

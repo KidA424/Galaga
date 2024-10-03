@@ -5,5 +5,5 @@ plugins {
 }
 
 application {
-    mainClass = "com.amneziac.galaga.assignment5.main"
+    mainClass = "com.amneziac.galaga.assignment5.Main"
 }

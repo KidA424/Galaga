@@ -1,6 +1,7 @@
 package com.amneziac.galaga.galaga;
 
 import com.amneziac.galaga.assignment5.Main;
+import com.amneziac.galaga.audio.AudioPlayer;
 import com.amneziac.galaga.curves.Line;
 import com.amneziac.galaga.curves.Parabola;
 import com.amneziac.galaga.curves.RandomPath;
@@ -9,10 +10,6 @@ import com.amneziac.galaga.fleets.ExplosionFleet;
 import com.amneziac.galaga.fleets.Fleet;
 import com.amneziac.galaga.fleets.ShipFleet;
 import com.amneziac.galaga.formations.Formation;
-import java.applet.Applet;
-import java.applet.AudioClip;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import com.amneziac.galaga.objects.Ship;
 
@@ -23,8 +20,8 @@ public class Level1 implements Runnable {
     public static Thread levelThread;
     private static Thread thread;
     
-    public static AudioClip audio;
-    private static String audioURL = "file:" + Game.path + "Lords.wav";
+    public static AudioPlayer audio;
+    private static String audioURL = "Lords.wav";
     
     public static ArrayList<Fleet> fleets = new ArrayList();
     private static Formation formation;
@@ -47,12 +44,9 @@ public class Level1 implements Runnable {
     
     @Override
     public void run() {
-        
-        try
-        {
-            audio = Applet.newAudioClip(new URL(audioURL));
-        } catch (MalformedURLException ex) {}
-        
+
+        audio = AudioPlayer.newUnchecked(audioURL);
+
         audio.play();
         
         fleets.add(new ExplosionFleet(this));

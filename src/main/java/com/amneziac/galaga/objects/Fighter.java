@@ -1,15 +1,12 @@
 
 package com.amneziac.galaga.objects;
 
+import com.amneziac.galaga.audio.AudioPlayer;
 import com.amneziac.galaga.fleets.FighterFleet;
 import com.amneziac.galaga.galaga.Game;
-import java.applet.Applet;
-import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Point;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import com.amneziac.galaga.objects.ammo.Ammo;
 import com.amneziac.galaga.objects.guns.Gun;
@@ -21,8 +18,8 @@ public abstract class Fighter extends VisibleObject {
     protected ArrayList<Ammo> ammo;
     protected ArrayList<Gun> guns;
     protected int ammoVelocity;
-    protected static AudioClip hitSound;
-    protected static String hitSoundURL = "file:" + Game.path + "hit.wav";
+    protected static AudioPlayer hitSound;
+    protected static String hitSoundURL = "hit.wav";
     
     public Fighter (Point startingLocation, FighterFleet parent)
     {
@@ -108,9 +105,6 @@ public abstract class Fighter extends VisibleObject {
     
     public static void initializeAudio()
     {
-        try
-        {
-            hitSound = Applet.newAudioClip(new URL(hitSoundURL));
-        } catch (MalformedURLException ex) {}
+        hitSound = AudioPlayer.newUnchecked(hitSoundURL);
     }
 }

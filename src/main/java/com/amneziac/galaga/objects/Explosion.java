@@ -1,27 +1,26 @@
 
 package com.amneziac.galaga.objects;
 
+import com.amneziac.galaga.audio.AudioPlayer;
 import com.amneziac.galaga.fleets.Fleet;
 import com.amneziac.galaga.galaga.Game;
-import java.applet.Applet;
-import java.applet.AudioClip;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import javax.imageio.ImageIO;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.Timer;
 
 
 public class Explosion extends VisibleObject {
     
     protected Image originalImage;
-    private static AudioClip audio;
-    private static final String audioURL = "file:" + Game.path + "Bomb2.wav";
-    
+    private static AudioPlayer audioPlayer;
+    private static final String audioURL = "Bomb2.wav";
+
     protected Fleet parent;
     protected Point center;
     protected double growthRate = 1.2;
@@ -38,8 +37,8 @@ public class Explosion extends VisibleObject {
     {
         super(fighter.getLocation(), new Dimension((int)(fighter.getWidth()/2), (int)(fighter.getHeight()/2)));
         this.parent = parent;
-        
-        audio.play();
+
+        audioPlayer.play();
         
         center = new Point(x + width/2, y + height/2);
         
@@ -92,12 +91,9 @@ public class Explosion extends VisibleObject {
         
         timePassed++;
     }
-    
+
     public static void initializeAudio()
     {
-        try
-        {
-            audio = Applet.newAudioClip(new URL(audioURL));
-        } catch (MalformedURLException ex) {}
+        audioPlayer = AudioPlayer.newUnchecked(audioURL);
     }
 }
